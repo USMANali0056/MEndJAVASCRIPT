@@ -1,0 +1,262 @@
+
+  
+  body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    min-height: 100vh;
+    display: flex;
+ 
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  display: flex;
+ 
+  min-height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #c70f62;
+  margin-bottom: 20px;
+}
+
+#whole-form {
+  background-color: #9addde;
+  padding: 25px;
+  width: 40%;
+  position: absolute;
+  margin-right:0%;
+  margin-top: 340px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid green;
+  height: 400px;
+
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus,
+select:focus {
+  outline-color: #007bff;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+select {
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+  #whole-form {
+    padding: 20px;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 0.9rem;
+  }
+}
+.summary{
+justify-content: center;
+
+text-align: center;
+padding: 10px;
+border-radius: 12px;
+size: large;
+width: 40%;
+height: 250px;
+position: absolute;
+margin-top:40px;
+margin-right: 0%;
+
+
+  background-color: #2d0563;
+height: 250px;
+}
+#items{
+  background-color: #9addde;
+ margin-left: 0%;
+ 
+ position: absolute
+ ;
+width:85%;
+
+
+}
+
+table {
+  width: 99%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+#items {
+  display: flex;           /* Enables Flexbox layout */
+  flex-wrap: wrap;         /* Allows items to wrap to the next line */
+
+  background-color: #fff;  /* Sets the background color to white */
+  padding: 25px;           /* Adds space inside the container */
+  border-radius: 8px;      /* Rounds the corners of the container */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);  /* Adds a subtle shadow effect */
+  height: auto;  
+  
+  margin-top: 40px; 
+  width: 49%;
+  position: absolute;
+        /* Allow the container to grow dynamically */
+}
+
+/* Flex items inside the container */
+.item {
+  flex: 1 1 200px;         /* Each item takes up to 200px but can shrink or grow */
+           /* Adds space between items */
+  min-width: 150px;        /* Ensures items don’t get too small */
+  box-sizing: border-box;  /* Ensures padding and borders don't affect width/height */
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+  #items {
+    padding: 15px;         /* Reduced padding for smaller screens */
+  }
+
+  .item {
+    flex: 1 1 45%;         /* Each item takes up 45% of the width (2 items per row) */
+    margin: 10px 5px;      /* Adjust margin for smaller screens */
+  }
+}
+
+/* Responsive layout for very small screens (e.g., mobile devices) */
+@media (max-width: 480px) {
+  #items {
+    padding: 10px;         /* Reduced padding for very small screens */
+  }
+
+  .item {
+    flex: 1 1 100%;        /* Each item takes up 100% of the width (1 item per row) */
+    margin: 10px 0;        /* Adjust margin to prevent spacing issues */
+  }
+}
+
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  #items {
+    padding: 20px;
+  }
+  #line{
+
+    border-left: 6px solid green;
+    height: 500px;
+  
+  }
+  #line{
+
+    border-left: 10px solid green;
+    margin-left:35%;
+    height: 500px;
+    background-color:"black" ;
+  }
+  #heading{
+
+text-align: center;
+
+color: darkred;
+justify-content: center;
+
+
+  }
+  /* Container that covers the entire screen */
+.container {
+  display: flex;              /* Use flexbox layout */
+  justify-content: center;    /* Center the content horizontally */
+  align-items: center;        /* Center the content vertically */
+  height: 100vh;               /* Make the container fill the viewport height */
+  background-color: #f0f0f0;  /* Optional background color for contrast */
+}
+
+/* Vertical line style */
+.vertical-line {
+  height: 100%;               /* Make the line span the full height */
+  width: 15px;                 /* Set the line width */
+  background-color: black;    /* Set the line color */
+}
