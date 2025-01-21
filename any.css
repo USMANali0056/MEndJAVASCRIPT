@@ -8,6 +8,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f7fb;
+    background-image: url();
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +69,6 @@ button:hover {
     color: #555;
 }
 
-/* Responsive design */
 @media (max-width: 480px) {
     .container {
         width: 90%;
